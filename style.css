@@ -1,0 +1,470 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1001px;
+    margin: auto;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    width: 100%;
+    background-color: #063b3b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-wrapper {
+    width: 90%;
+    max-width: 1001px;
+    min-height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 30px;
+    font-family: Cambria, Georgia, serif;
+    font-weight: 800;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 12px;
+    line-height: 80px;
+}
+
+.menu ul li a:hover {
+    color: #54d6c2;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.kolom {
+    flex: 1;
+    text-align: left;
+}
+
+.kolom h2 {
+    font-family: "Comic Sans MS", cursive;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #087f78;
+    line-height: 50px;
+}
+
+.deskripsi {
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    color: #555;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.gambar {
+    width: 480px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 20px rgba(8, 127, 120, 0.4);
+    transition: 0.3s;
+}
+
+.gambar:hover {
+    transform: translateY(-5px);
+}
+
+.reservasi {
+    display: inline-block;
+    background: #087f78;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reservasi:hover {
+    background: #055b56;
+}
+
+
+/* =========================
+   TENTANG PARU-PARU
+========================= */
+.katalog {
+    border-top: 1px solid #aaa;
+    padding: 25px 0 60px;
+}
+
+.judul-menu {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    color: #087f78;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subjudul {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: #e2f3ef;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 12px 0 8px;
+    color: #087f78;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #555;
+}
+
+
+/* =========================
+   PENYAKIT PARU-PARU
+========================= */
+.book-table {
+    padding: 40px 0 60px;
+    border-top: 1px solid #aaa;
+}
+
+.book-title {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 32px;
+    font-weight: normal;
+    color: #087f78;
+    margin-bottom: 25px;
+}
+
+.penyakit-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.penyakit-card {
+    background: #063b3b;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.penyakit-card:hover {
+    transform: translateY(-5px);
+}
+
+.penyakit-card h3 {
+    color: #62d9c5;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.penyakit-card p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #eee;
+}
+
+
+/* =========================
+   TIPS KESEHATAN
+========================= */
+.tips-section {
+    padding: 40px 0 60px;
+    border-top: 1px solid #aaa;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tip {
+    background: #e2f3ef;
+    padding: 25px;
+    border-left: 5px solid #087f78;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tip:hover {
+    transform: translateY(-5px);
+}
+
+.tip h3 {
+    color: #087f78;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.tip p {
+    font-size: 13px;
+    color: #555;
+    line-height: 22px;
+}
+
+
+/* =========================
+   ARTIKEL
+========================= */
+.testimonial-section {
+    padding: 50px 0 60px;
+    border-top: 1px solid #eee;
+}
+
+.testimonial-title {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #087f78;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 25px;
+}
+
+.testimonial-card {
+    flex: 1;
+    background: #063b3b;
+    color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.testimonial-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #62d9c5;
+}
+
+.testimonial-card span {
+    font-size: 12px;
+    color: #ddd;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #063b3b;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1001px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #62d9c5;
+}
+
+.footer-box p {
+    font-size: 13px;
+    line-height: 23px;
+    color: #ddd;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #087f78;
+    color: white;
+    font-size: 12px;
+}
+
+.copyright {
+    border-top: 1px solid #47716d;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: #ccc;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media screen and (max-width: 768px) {
+
+    .nav-wrapper {
+        width: 95%;
+        min-height: 65px;
+        flex-direction: column;
+        padding: 12px 0;
+        gap: 8px;
+    }
+
+    .logo a {
+        font-size: 23px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu ul li a {
+        font-size: 10px;
+        padding: 0 5px;
+        line-height: 30px;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 35px 0;
+    }
+
+    .kolom {
+        width: 100%;
+    }
+
+    .kolom h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .gambar {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .penyakit-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .book-title {
+        font-size: 26px;
+    }
+}
